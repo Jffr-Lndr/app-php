@@ -3,7 +3,7 @@ services:
   image: tutum/apache-php
   hostname: web-jeff-php
   volumes:
-   - ./db-data/:/var/www/html/
+   - ./db-data:/var/www/html
   ports:
    - 8001:80
   networks:
@@ -13,7 +13,7 @@ services:
   image: mariadb
   hostname: db
   volumes:
-   - ./my-db/:/var/lib/mysql/
+   - ./my-db:/var/lib/mysql
   environment:
    - MARIADB_ROOT_PASSWORD=root
   networks:
