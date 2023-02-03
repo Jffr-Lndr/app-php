@@ -9,6 +9,7 @@ node {
 
     stage('Clone') {
           checkout scm
+          sh 'git clone https://github.com/Jffr-Lndr/app-php.git'
     }
 
     stage('Build') {
