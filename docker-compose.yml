@@ -3,7 +3,7 @@ services:
   image: tutum/apache-php
   hostname: web-jeff-php
   volumes:
-   - ./php:/var/www/html/
+   - ./db-data:/var/www/html/
   ports:
    - 8001:80
   networks:
