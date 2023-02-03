@@ -7,7 +7,7 @@ node {
     }
 
     stage('Build') {
-            sh 'docker-compose run –rm compile'
+            sh 'docker-compose up'
     }
    
     stage('Push') {/*
