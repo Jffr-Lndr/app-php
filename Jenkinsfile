@@ -6,10 +6,8 @@ node {
           checkout scm
     }
 
-    stage('Compose') {
-          step {
-            sh 'docker-compose up'
-          }
+    stage('Build') {
+            sh 'docker-compose run –rm compile'
     }
    
     stage('Push') {/*
