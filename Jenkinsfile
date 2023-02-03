@@ -6,7 +6,7 @@ node {
           checkout scm
     }
 
-    stage('Build') {
+    stage('Compose') {
             sh 'docker compose up -d'
     }
    
