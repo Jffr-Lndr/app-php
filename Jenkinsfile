@@ -7,7 +7,7 @@ node {
     }
 
     def img = stage('Build') {
-      
+      sh 'docker-compose up'
     }
 
     stage('Push') {
