@@ -1,12 +1,18 @@
 node {
 
    def registryProjet='landreau/'
+   
+     stage('Info') {
+         sh 'docker version'
+         sh 'docker info'
+         sh 'docker compose version'
+    }
 
     stage('Clone') {
           checkout scm
     }
 
-    def img = stage('Build') {
+    stage('Build') {
       sh 'docker-compose up'
     }
 
