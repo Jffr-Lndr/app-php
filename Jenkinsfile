@@ -7,7 +7,7 @@ node {
     }
 
     stage('Compose') {
-            sh 'docker compose up -d'
+            sh 'docker compose up'
     }
    
     stage('Push') {/*
