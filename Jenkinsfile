@@ -7,7 +7,7 @@ node {
     }
 
     stage('Compose') {
-          steps {
+          step {
             sh 'docker-compose up -d'
           }
     }
